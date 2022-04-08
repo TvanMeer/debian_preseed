@@ -5,15 +5,3 @@ A script to automate the installation of Debian.
 
 This installs a minimal AMD64 image of Debian Bullseye, the current stable branch of Debian.
 See the [docs](https://wiki.debian.org/DebianInstaller/Preseed) for more info about preseeding.
-
-The package OpenSSH is installed to prepare the system for provisioning by [Ansible](https://docs.ansible.com/ansible/latest/index.html).
-
-Some of the settings are personal, such as language and keyboard layout. You might want to fork this repository, change the settings to
-your preferences and use the URL of your own Github repository in step 4.
-
-## Usage
-
-1. [Download](https://www.debian.org/download) the netinstaller ISO.
-2. Create a bootable USB or virtual machine with this image.
-3. Start the installation wizard and choose Advanced options -> Automated install.
-4. Type the URL **http://github.com/TvanMeer/debian_preseed/preseed.cfg** and press enter.
