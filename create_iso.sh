@@ -31,12 +31,10 @@ cd ..
 
 # TODO: https://wiki.debian.org/RepackBootableISO
 
-# Contents of file iso/.disk/mkisofs
+# Modified contents of file iso/.disk/mkisofs
 xorriso -as mkisofs \
-   -r -checksum_algorithm_iso sha256,sha512 \
    -V 'Debian 11.3.0 amd64 n' \
    -o /srv/cdbuilder.debian.org/dst/deb-cd/out/2bullseyeamd64/debian-11.3.0-amd64-NETINST-1.iso \
-   -md5-list /srv/cdbuilder.debian.org/src/deb-cd/tmp/2bullseyeamd64/bullseye/checksum-check \
    -J -joliet-long -cache-inodes \
    -isohybrid-mbr syslinux/usr/lib/ISOLINUX/isohdpfx.bin -b isolinux/isolinux.bin \
    -c isolinux/boot.cat -boot-load-size 4 -boot-info-table -no-emul-boot \
