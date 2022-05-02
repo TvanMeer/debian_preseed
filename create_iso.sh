@@ -6,7 +6,7 @@ cd $(dirname $0)
 
 
 # Download Debian netinstaller
-curl https://laotzu.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso
+curl -O https://laotzu.ftp.acc.umu.se/debian-cd/current/amd64/iso-cd/debian-11.3.0-amd64-netinst.iso
 
 
 # Extracting the Initrd from an ISO Image
